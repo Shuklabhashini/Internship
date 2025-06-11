@@ -1,0 +1,88 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 70px; /* To make room for fixed header */
+}
+
+/* Fixed Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #264653;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Sidebar using float */
+.sidebar {
+  float: left;
+  width: 200px;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Content section */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* Relative & Absolute positioning demo */
+.relative-container {
+  position: relative;
+  background-color: #e9ecef;
+  padding: 30px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.floating-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e76f51;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #264653;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
