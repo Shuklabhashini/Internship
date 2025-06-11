@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Accessible Profile Page</title>
+  <style>
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 5px 10px;
+      background-color: #eee;
+      border-radius: 5px;
+    }
+    nav a:focus {
+      outline: 2px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main header -->
+  <header>
+    <h1>ABC's Profile</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction Section -->
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction</h2>
+      <p>Hello! I'm ABC, passionate about tech and creative projects. Welcome to my accessible webpage.</p>
+      <img src="profile-placeholder.jpg" alt="" width="200">
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" aria-labelledby="hobbies-heading">
+      <h2 id="hobbies-heading">My Hobbies</h2>
+      <ul>
+        <li>Painting</li>
+        <li>Reading Novels</li>
+        <li>Traveling</li>
+        <li>Blogging</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" aria-labelledby="goals-heading">
+      <h2 id="goals-heading">Top 5 Goals</h2>
+      <ol>
+        <li>Master Web Development</li>
+        <li>Contribute to Open Source</li>
+        <li>Travel to Japan</li>
+        <li>Start a YouTube Channel</li>
+        <li>Build a Personal Brand</li>
+      </ol>
+    </section>
+
+    <!-- Schedule Table -->
+    <section id="schedule" aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Weekly Schedule</h2>
+      <table border="1">
+        <caption>My Weekly Activity Schedule</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Learning React</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Workout + Painting</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Blog Writing</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Open Source Contributions</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Reading Novels</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <br>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <br>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </div>
+        <br>
+        <button type="submit" role="button">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with me on <a href="https://github.com/" target="_blank">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
