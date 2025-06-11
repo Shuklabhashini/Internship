@@ -1,0 +1,41 @@
+/* External CSS for page styling */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin: 0;
+}
+
+/* ID selector for header */
+#page-title {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Class selector for navigation links */
+.nav-link {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Add hover effect */
+.nav-link:hover {
+  background-color: #bbb;
+  color: #000;
+}
+
+/* Section styling */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #aaa;
+}
